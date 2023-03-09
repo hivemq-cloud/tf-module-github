@@ -9,7 +9,7 @@ terraform {
 
 # Configure the GitHub Provider
 provider "github" {
-  token = "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"
+  token = var.token
   owner = "hivemq-cloud"
 }
 
