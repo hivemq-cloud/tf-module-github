@@ -1,6 +1,6 @@
 # terraform-github-module
 
-A terrafomr module for creating private repository into the GitHub organization space HiveMQ.
+A terraform module for creating private repository into the GitHub organization space HiveMQ.
 
 **_This module supports Terraform v1.x and is compatible with the Official Terraform GitHub Provider v4.20 and above from `integrations/github`._**
 
