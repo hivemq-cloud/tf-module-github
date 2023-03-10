@@ -3,10 +3,10 @@ on:
     branches:
       - master
       - development
+      - chore/sanity-check
   pull_request:
     branches:
       - master
-      - development
 
 jobs:
   terraform:
