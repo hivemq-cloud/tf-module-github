@@ -3,7 +3,9 @@ on:
     branches:
       - master
       - development
-      - chore/sanity-check
+      - chore/*
+      - feat/*
+      - release/*
   pull_request:
     branches:
       - master
@@ -13,8 +15,14 @@ jobs:
     name: 'Terraform'
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
-    - uses: hashicorp/setup-terraform@v2
+    - name: 'Checkout'
+      uses: actions/checkout@v3
+
+    - name: 'Terraform Setup' 
+      uses: hashicorp/setup-terraform@v2
+
+    - name: 'Terraform Init'
+      run: terraform init
 
     - name: Terraform fmt
       id: fmt
