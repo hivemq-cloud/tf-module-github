@@ -21,5 +21,5 @@ module "hivemq_github" {
   ]
 
   admin_team_ids = ["sre"]
-
+  admin_collaborators = ["patrickjahns"]
 }
